@@ -24,7 +24,7 @@ class firatUniH extends StatelessWidget{
       body: Column(
           children: [
             SizedBox(height: 5,),
-            //Image(image: AssetImage("lib/assets/images/watermark.jpg")),
+            Image.asset("assets/images/firatUni.jpg"),
             SizedBox( height: 5,),
 
             Row(

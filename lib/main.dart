@@ -1,4 +1,5 @@
 import 'package:elazigcepte/hastaneler.dart';
+import "package:elazigcepte/cafeler.dart";
 import 'package:flutter/material.dart';
 
 void main() async {
@@ -80,7 +81,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
                   SizedBox(width: 10,),
 
-                  butonOlustur(text: "KAFE", fonksiyon: ()=> openNewTa(context, hastaneler()), icon: Icons.local_cafe_outlined, iconSize: 50, width: 130, height: 190),
+                  butonOlustur(text: "KAFE", fonksiyon: ()=> openNewTa(context, cafeler()), icon: Icons.local_cafe_outlined, iconSize: 50, width: 130, height: 190),
 
                   SizedBox(width: 10,),
 

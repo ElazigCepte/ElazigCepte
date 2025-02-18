@@ -12,7 +12,7 @@ class asbirinCafe extends StatelessWidget{
     return Scaffold(
       appBar: AppBar
         (backgroundColor: Color(buttonColor),
-        title: Text("Fırat Üniversitesi Hastanesi",
+        title: Text("ASBİRİN CAFE",
             style: TextStyle(fontSize: 24,
                 fontWeight: FontWeight.bold,
                 color: Colors.white
@@ -24,13 +24,13 @@ class asbirinCafe extends StatelessWidget{
       body: Column(
           children: [
             SizedBox(height: 5,),
-            //Image(image: AssetImage("lib/assets/images/watermark.jpg")),
+            Image.asset("assets/images/asbirin.jpg"),
             SizedBox( height: 5,),
 
             Row(
               children: [
                 SizedBox(width: 10,),
-                butonOlustur(text: " Menü için tıklayın.       ", fonksiyon: (){launchUrl(Uri.http("ftm.firat.edu.tr"),);} ,icon: Icons.web, width: 110, height: 50),
+                butonOlustur(text: " Daha fazlası için tıklayın.                      ", fonksiyon: (){launchUrl(Uri.parse("https://www.facebook.com/asbirin23/?locale=tr_TR"),);} ,icon: Icons.web, width: 110, height: 50),
                 SizedBox(width: 10,)
               ],
             ),
@@ -40,7 +40,7 @@ class asbirinCafe extends StatelessWidget{
               children: [
                 SizedBox(width: 10,),
 
-                butonOlustur(text: "Randevu hattı : +904246060112 ", fonksiyon:(){launchUrl(Uri(scheme: 'tel', path: "+904246060112",));}, icon: Icons.call, width: 10, height: 50),
+                butonOlustur(text: "Randevu hattı : +904242416622 ", fonksiyon:(){launchUrl(Uri(scheme: 'tel', path: "+904242416622",));}, icon: Icons.call, width: 10, height: 50),
 
                 SizedBox(width: 10,)
               ],
@@ -49,7 +49,7 @@ class asbirinCafe extends StatelessWidget{
             Row(
               children: [
                 SizedBox(width: 10,),
-                butonOlustur(text: "Konum bilgisi                                 ", fonksiyon: () async {launchUrl(Uri.parse('https://www.google.com/maps?gs_lcrp=EgZjaHJvbWUqDggAEEUYJxg7GIAEGIoFMg4IABBFGCcYOxiABBiKBTIGCAEQRRhAMgYIAhBFGDkyDAgDECMYJxiABBiKBTIHCAQQLhiABDIGCAUQRRg9MgYIBhBFGD0yBggHEEUYPdIBCDE2ODNqMGo3qAIIsAIB&um=1&ie=UTF-8&fb=1&gl=tr&sa=X&geocode=KaPCGVqJwHZAMfZalGI-sqJW&daddr=%C3%9Cniversite,+23200+Elaz%C4%B1%C4%9F+Merkez/Elaz%C4%B1%C4%9F'));},icon: Icons.location_on_outlined, width: 200, height: 50),
+                butonOlustur(text: "Konum bilgisi                                 ", fonksiyon: () async {launchUrl(Uri.parse('https://www.google.com/maps/dir//Asbirin+Cafe+ve+%C3%87aybah%C3%A7esi,+%C3%9Cniversite,+23200+Elaz%C4%B1%C4%9F+Merkez%2FElaz%C4%B1%C4%9F/@38.6740932,39.2010733,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x4076c06a42128c6d:0xcd3e252e513d75ac!2m2!1d39.2010656!2d38.6741232!3e0?hl=tr&entry=ttu&g_ep=EgoyMDI1MDIxMi4wIKXMDSoASAFQAw%3D%3D'));},icon: Icons.location_on_outlined, width: 200, height: 50),
                 SizedBox(width: 10,)
               ],
             )
