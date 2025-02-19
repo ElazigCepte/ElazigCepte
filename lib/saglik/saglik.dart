@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:elazigcepte/saglik/hastaneler/hastaneler.dart';
 import 'package:elazigcepte/saglik/eczane/eczaneler.dart';
+import 'package:elazigcepte/saglik/fizyoterapi/fizyoterapistler.dart';
 import 'package:elazigcepte/saglik/disHekimi/disHekimleri.dart';
+import "package:elazigcepte/saglik/diyetisyen/diyetisyenler.dart";
+import "package:elazigcepte/saglik/optik/optikciler.dart";
+
 
 class saglik extends StatelessWidget {
   Widget build(BuildContext context) {
@@ -20,18 +24,18 @@ class saglik extends StatelessWidget {
             SizedBox(height: 10,),
             butonOlustur(text: "DİŞ HEKİMİ", fonksiyon:() => navigator(context, dishekimleri()) , width: 700, height: 50),
             SizedBox(height: 10,),
-            butonOlustur(text: "DİYETİSYEN", fonksiyon:() => navigator(context, hastaneler()) , width: 700, height: 50),
+            butonOlustur(text: "DİYETİSYEN", fonksiyon:() => navigator(context, diyetisyenler()) , width: 700, height: 50),
             SizedBox(height: 10,),
-            butonOlustur(text: "FİZYOTERAPİST", fonksiyon:() => navigator(context, hastaneler()) , width: 700, height: 50),
+            butonOlustur(text: "FİZYOTERAPİST", fonksiyon:() => navigator(context, fizyoterapistler()) , width: 700, height: 50),
             SizedBox(height: 10,),
-            butonOlustur(text: "OPTİK", fonksiyon:() => navigator(context, hastaneler()) , width: 700, height: 50),
+            butonOlustur(text: "OPTİK", fonksiyon:() => navigator(context, optikciler()) , width: 700, height: 50),
             SizedBox(height: 10,),
-            butonOlustur(text: "ALTERNATİF TIP", fonksiyon:() => navigator(context, hastaneler()) , width: 700, height: 50),
+            /*butonOlustur(text: "ALTERNATİF TIP", fonksiyon:() => navigator(context, hastaneler()) , width: 700, height: 50),
             SizedBox(height: 10,),
             butonOlustur(text: "VETERİNER", fonksiyon:() => navigator(context, hastaneler()) , width: 700, height: 50),
             SizedBox(height: 10,),
             butonOlustur(text: "AİLE SAĞLIĞI MERKEZİ", fonksiyon:() => navigator(context, hastaneler()) , width: 700, height: 50),
-            SizedBox(height: 10,),
+            SizedBox(height: 10,),*/
           ],
         )
     );
