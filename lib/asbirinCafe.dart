@@ -30,7 +30,7 @@ class asbirinCafe extends StatelessWidget{
             Row(
               children: [
                 SizedBox(width: 10,),
-                butonOlustur(text: " Daha fazlası için tıklayın.                      ", fonksiyon: (){launchUrl(Uri.parse("https://www.facebook.com/asbirin23/?locale=tr_TR"),);} ,icon: Icons.web, width: 110, height: 50),
+                butonOlustur(text: "Daha fazlası için tıklayın.              ", fonksiyon: (){launchUrl(Uri.parse("https://www.facebook.com/asbirin23/?locale=tr_TR"),);} ,icon: Icons.web, width: 110, height: 50),
                 SizedBox(width: 10,)
               ],
             ),
@@ -40,7 +40,7 @@ class asbirinCafe extends StatelessWidget{
               children: [
                 SizedBox(width: 10,),
 
-                butonOlustur(text: "Randevu hattı : +904242416622 ", fonksiyon:(){launchUrl(Uri(scheme: 'tel', path: "+904242416622",));}, icon: Icons.call, width: 10, height: 50),
+                butonOlustur(text: "İletişim : +904242416622 ", fonksiyon:(){launchUrl(Uri(scheme: 'tel', path: "+904242416622",));}, icon: Icons.call, width: 10, height: 50),
 
                 SizedBox(width: 10,)
               ],

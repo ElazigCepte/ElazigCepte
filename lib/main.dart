@@ -51,11 +51,11 @@ class _MyHomePageState extends State<MyHomePage> {
                 children: <Widget>[
                   SizedBox(width: 10),
 
-                  butonOlustur(text: "HASTANELER", fonksiyon: () => openNewTa(context , hastaneler()), icon: Icons.local_hospital_outlined, iconSize: 100, width: 190, height: 190),
+                  butonOlustur(text: "SAĞLIK", fonksiyon: () => openNewTab(context , hastaneler()), icon: Icons.local_hospital_outlined, iconSize: 100, width: 190, height: 190),
 
                   SizedBox(width: 10),
 
-                  butonOlustur(text: "KÜLTÜR & SANAT", fonksiyon: () => openNewTa(context, hastaneler()) , icon: Icons.travel_explore, iconSize: 100.0, width: 190, height: 190.0),
+                  butonOlustur(text: "KAFE", fonksiyon: ()=> openNewTab(context, cafeler()), icon: Icons.local_cafe_outlined, iconSize: 100, width: 190, height: 190),
 
                   SizedBox(width: 10,)
                 ],
@@ -66,11 +66,11 @@ class _MyHomePageState extends State<MyHomePage> {
 
                   SizedBox(width: 10,),
 
-                  butonOlustur(text: "KAMU  ", fonksiyon: () => openNewTa(context , hastaneler()), icon: Icons.account_balance_outlined, iconSize: 100, width: 190, height: 190),
+                  butonOlustur(text: "KAMU  ", fonksiyon: () => openNewTab(context , hastaneler()), icon: Icons.account_balance_outlined, iconSize: 100, width: 190, height: 190),
 
                   SizedBox(width: 10,),
 
-                  butonOlustur(text: "SPOR", fonksiyon: ()=> openNewTa(context , hastaneler()), icon: Icons.sports_kabaddi, iconSize: 100, width: 190, height: 190),
+                  butonOlustur(text: "SPOR", fonksiyon: ()=> openNewTab(context , hastaneler()), icon: Icons.sports_kabaddi, iconSize: 100, width: 190, height: 190),
 
                   SizedBox(width: 10,)
                 ],
@@ -81,15 +81,15 @@ class _MyHomePageState extends State<MyHomePage> {
 
                   SizedBox(width: 10,),
 
-                  butonOlustur(text: "KAFE", fonksiyon: ()=> openNewTa(context, cafeler()), icon: Icons.local_cafe_outlined, iconSize: 50, width: 130, height: 190),
+                  butonOlustur(text: "KÜLTÜR & SANAT", fonksiyon: () => openNewTab(context, hastaneler()) , icon: Icons.travel_explore, iconSize: 50, width: 190, height: 190.0),
 
                   SizedBox(width: 10,),
 
-                  butonOlustur(text: "HABERLER", fonksiyon: ()=> openNewTa(context, hastaneler()), icon: Icons.newspaper, iconSize: 50, width: 130, height: 190),
+                  butonOlustur(text: "HABERLER", fonksiyon: ()=> openNewTab(context, hastaneler()), icon: Icons.newspaper, iconSize: 50, width: 130, height: 190),
 
                   SizedBox(width: 10,),
 
-                  butonOlustur(text: "EĞİTİM", fonksiyon: ()=> openNewTa(context, hastaneler()), icon: Icons.class_outlined, iconSize: 50, width: 130, height: 190),
+                  butonOlustur(text: "GEZELİM GÖRELİM", fonksiyon: ()=> openNewTab(context, hastaneler()), icon: Icons.map, iconSize: 50, width: 130, height: 190),
 
                   SizedBox(width: 10,)
                 ],
@@ -100,23 +100,77 @@ class _MyHomePageState extends State<MyHomePage> {
 
                   SizedBox(width: 10,),
 
-                  butonOlustur(text: "USTA ÇAĞIR", fonksiyon: ()=> openNewTa(context, hastaneler()), icon: Icons.handyman_outlined, iconSize: 95, width: 190, height: 190),
-
-                  // butonOlustur(text: "text", fonksiyon:()=> openNewTa(context, hastaneler()) , icon: icon, iconSize: iconSize, width: width, height: height)
+                  butonOlustur(text: "USTA ÇAĞIR", fonksiyon: ()=> openNewTab(context, hastaneler()), icon: Icons.handyman_outlined, iconSize: 95, width: 190, height: 190),
+                  
                   SizedBox(width: 10,),
 
-                  butonOlustur(text: "HESABIM", fonksiyon:()=> openNewTa(context, hastaneler()) , icon: Icons.person, iconSize: 100, width: 190, height: 190)
+                  butonOlustur(text: "ULAŞIM", fonksiyon:()=> openNewTab(context, hastaneler()) , icon: Icons.directions_car, iconSize: 100, width: 190, height: 190)
                 ],
               ),
               SizedBox(height: 10,),
+              Row(
+                children: [
+                  SizedBox(width: 10,),
+                  
+                  butonOlustur(text: "KAMPANYA", fonksiyon: ()=> openNewTab(context, hastaneler()), icon: Icons.sell_outlined, iconSize: 50, width: 130, height: 190),
 
-              SizedBox(height: 10,)
+                  SizedBox(width: 10,),
+
+                  butonOlustur(text:"Konaklama" , fonksiyon: ()=> openNewTab(context , hastaneler()), icon: Icons.hotel, iconSize: 50, width: 130, height: 190),
+
+                  SizedBox(width: 10,),
+
+                  butonOlustur(text: "KİŞİSEL BAKIM", fonksiyon: ()=> openNewTab(context , hastaneler()), icon: Icons.spa_outlined, iconSize: 50, width: 130, height: 190),
+
+                  SizedBox(width: 10,)
+                ],
+              ),
+              SizedBox(height: 10,),
+              Row(
+                children: [
+                  SizedBox(width: 10,),
+
+                  butonOlustur(text: "ETKİNLİKLER", fonksiyon: ()=> openNewTab(context , hastaneler()), icon: Icons.event_available_outlined , iconSize: 100, width: 190, height: 190),
+                  
+                  SizedBox(width: 10,),
+                  
+                  butonOlustur(text: "DUYURULAR", fonksiyon: ()=> openNewTab(context , hastaneler()), icon: Icons.campaign_outlined, iconSize: 100, width: 190, height: 190)
+                
+                ],
+              ),
+              SizedBox(height: 10,),
+              Row(
+                children: [
+                  SizedBox(width: 10,),
+
+                  butonOlustur(text: "CEPTE FIRAT", fonksiyon: ()=> openNewTab(context , hastaneler()), icon: Icons.school_outlined, iconSize: 100, width: 190, height: 190),
+
+                  SizedBox(width: 10,),
+
+                  butonOlustur(text: "EĞİTİM", fonksiyon: ()=> openNewTab(context , hastaneler()), icon: Icons.book_outlined, iconSize: 100, width: 190, height: 190),
+
+                  SizedBox(width: 10,)
+                ],
+              ),
+              SizedBox(height: 10,),
+              Row(
+                children: [
+                SizedBox(width: 10,),
+                butonOlustur(text: "OTO SERVİS", fonksiyon: ()=> openNewTab(context , hastaneler()), icon: Icons.car_repair, iconSize: 50, width: 130, height: 190),
+                SizedBox(width: 10,),
+                butonOlustur(text: "AKARYAKIT", fonksiyon: ()=> openNewTab(context , hastaneler()), icon: Icons.local_gas_station_outlined, iconSize: 50, width: 130, height: 190),
+                  SizedBox(width: 10,),
+                  butonOlustur(text: "ARAÇ KİRALA", fonksiyon: ()=> openNewTab(context , hastaneler()), icon: Icons.car_rental_outlined, iconSize: 50, width: 130, height: 190),
+                  SizedBox(width: 10,)
+                ],
+              )
+              ,SizedBox(height: 10,)
             ]
         )
     );
   }
 
-  void openNewTa(BuildContext context, Widget page) {
+  void openNewTab(BuildContext context, Widget page) {
     Navigator.push(
       context,
       MaterialPageRoute(builder: (context) => page),
