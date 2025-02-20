@@ -65,10 +65,9 @@ class avrupaO extends StatelessWidget{
           onPressed: fonksiyon,
           child: Row(
             children: [
+              Icon(icon, color: Colors.white,),
+              SizedBox(width: 10,),
               Text(text),
-              SizedBox(width: 100,),
-              Icon(icon),
-              SizedBox(width: 10,)
             ],
           ),
           style: ElevatedButton.styleFrom(

@@ -12,7 +12,7 @@ class otuzuncuYilCafe extends StatelessWidget{
     return Scaffold(
       appBar: AppBar
         (backgroundColor: Color(buttonColor),
-        title: Text("Fırat Üniversitesi Hastanesi",
+        title: Text("OTUZUNCU YIL KAFE",
             style: TextStyle(fontSize: 24,
                 fontWeight: FontWeight.bold,
                 color: Colors.white
@@ -25,15 +25,6 @@ class otuzuncuYilCafe extends StatelessWidget{
           children: [
             SizedBox(height: 5,),
             //Image(image: AssetImage("lib/assets/images/watermark.jpg")),
-            SizedBox( height: 5,),
-
-            Row(
-              children: [
-                SizedBox(width: 10,),
-                butonOlustur(text: " Menü için tıklayın.            ", fonksiyon: (){launchUrl(Uri.http("ftm.firat.edu.tr"),);} ,icon: Icons.web, width: 110, height: 50),
-                SizedBox(width: 10,)
-              ],
-            ),
 
             SizedBox(height: 10,),
             Row(
@@ -67,7 +58,7 @@ class otuzuncuYilCafe extends StatelessWidget{
             children: [
               Text(text),
               SizedBox(width: 100,),
-              Icon(icon),
+              Icon(icon, color: Colors.white,),
               SizedBox(width: 10,)
             ],
           ),

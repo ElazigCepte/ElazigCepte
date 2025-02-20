@@ -67,7 +67,7 @@ class asbirinCafe extends StatelessWidget{
             children: [
               Text(text),
               SizedBox(width: 100,),
-              Icon(icon),
+              Icon(icon, color: Colors.white,),
               SizedBox(width: 10,)
             ],
           ),

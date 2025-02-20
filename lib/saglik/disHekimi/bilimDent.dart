@@ -39,7 +39,7 @@ class bilimDent extends StatelessWidget{
             Row(
               children: [
                 SizedBox(width: 10,),
-                butonOlustur(text: "Konum bilgisi ve yol tarifi            ", fonksiyon: () async {launchUrl(Uri.parse('https://www.google.com/maps/dir//Bilimdent+A%C4%9F%C4%B1z+ve+Di%C5%9F+Sa%C4%9Fl%C4%B1%C4%9F%C4%B1+Poliklini%C4%9Fi,+Cumhuriyet,+Beyzade+Efendi+Blv.+No:36+A+D:1,+23190+Elaz%C4%B1%C4%9F+Merkez%2FElaz%C4%B1%C4%9F/@38.6714346,39.1747071,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x4076c11e8f837e6f:0xf31b30e2132b8f39!2m2!1d39.1747052!2d38.671432!3e0?hl=tr&entry=ttu&g_ep=EgoyMDI1MDIxMi4wIKXMDSoASAFQAw%3D%3D'));},icon: Icons.location_on_outlined, width: 200, height: 50),
+                butonOlustur(text: "Konum bilgisi ve yol tarifi ", fonksiyon: () async {launchUrl(Uri.parse('https://www.google.com/maps/dir//Bilimdent+A%C4%9F%C4%B1z+ve+Di%C5%9F+Sa%C4%9Fl%C4%B1%C4%9F%C4%B1+Poliklini%C4%9Fi,+Cumhuriyet,+Beyzade+Efendi+Blv.+No:36+A+D:1,+23190+Elaz%C4%B1%C4%9F+Merkez%2FElaz%C4%B1%C4%9F/@38.6714346,39.1747071,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x4076c11e8f837e6f:0xf31b30e2132b8f39!2m2!1d39.1747052!2d38.671432!3e0?hl=tr&entry=ttu&g_ep=EgoyMDI1MDIxMi4wIKXMDSoASAFQAw%3D%3D'));},icon: Icons.location_on_outlined, width: 200, height: 50),
                 SizedBox(width: 10,)
               ],
             )
@@ -55,10 +55,9 @@ class bilimDent extends StatelessWidget{
           onPressed: fonksiyon,
           child: Row(
             children: [
+              Icon(icon, color: Colors.white,),
+              SizedBox(width: 10,),
               Text(text),
-              SizedBox(width: 100,),
-              Icon(icon),
-              SizedBox(width: 10,)
             ],
           ),
           style: ElevatedButton.styleFrom(

@@ -12,7 +12,7 @@ class teknokentCafe extends StatelessWidget{
     return Scaffold(
       appBar: AppBar
         (backgroundColor: Color(buttonColor),
-        title: Text("Fırat Üniversitesi Hastanesi",
+        title: Text("TEKNOKENT KAFE",
             style: TextStyle(fontSize: 24,
                 fontWeight: FontWeight.bold,
                 color: Colors.white
@@ -67,7 +67,7 @@ class teknokentCafe extends StatelessWidget{
             children: [
               Text(text),
               SizedBox(width: 100,),
-              Icon(icon),
+              Icon(icon, color: Colors.white,),
               SizedBox(width: 10,)
             ],
           ),

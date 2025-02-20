@@ -1,4 +1,5 @@
 import 'package:elazigcepte/saglik/hastaneler/FiratUniH.dart';
+import 'package:elazigcepte/saglik/hastaneler/elazigDevletH.dart';
 import 'package:flutter/material.dart';
 
 class hastaneler extends StatelessWidget {
@@ -14,9 +15,7 @@ class hastaneler extends StatelessWidget {
             SizedBox(height: 10,),
             butonOlustur(text: "Fırat Üniversite Hastanesi", fonksiyon:() => hastaneler(context, firatUniH()) , width: 700, height: 50),
             SizedBox(height: 10,),
-            butonOlustur(text: "Elazığ Devlet Hastanesi", fonksiyon:() => hastaneler(context, firatUniH()) , width: 700, height: 50),
-            SizedBox(height: 10,),
-            butonOlustur(text: "Elazığ Fethi Sekin Şehir Hastanesi", fonksiyon:() => hastaneler(context, firatUniH()) , width: 700, height: 50),
+            butonOlustur(text: "Elazığ Devlet Hastanesi", fonksiyon:() => hastaneler(context, elazigDevletH()) , width: 700, height: 50),
             SizedBox(height: 10,),
           ],
         )

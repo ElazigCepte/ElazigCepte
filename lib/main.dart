@@ -1,5 +1,13 @@
+import 'package:elazigcepte/cepteFirat/cepteFirat.dart';
+import 'package:elazigcepte/elazigiTaniyalim/elazigiTaniyalim.dart';
+import 'package:elazigcepte/haber/haber.dart';
+import 'package:elazigcepte/kisiselBakim/bakim.dart';
+import 'package:elazigcepte/konaklama/konaklama.dart';
 import 'package:elazigcepte/saglik/saglik.dart';
 import "package:elazigcepte/kafeRestorant/cafeler.dart";
+import 'package:elazigcepte/spor/spor.dart';
+import 'package:elazigcepte/ulasim/ulasim.dart';
+import 'package:elazigcepte/ustaCagir/usta.dart';
 import 'package:flutter/material.dart';
 
 void main() async {
@@ -61,7 +69,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ],
               ),
               SizedBox(height: 10),
-              Row(//3. SATIR
+              Row(
                 children: <Widget>[
 
                   SizedBox(width: 10,),
@@ -70,7 +78,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
                   SizedBox(width: 10,),
 
-                  butonOlustur(text: "SPOR", fonksiyon: ()=> openNewTab(context , saglik()), icon: Icons.sports_kabaddi, iconSize: 100, width: 190, height: 190),
+                  butonOlustur(text: "SPOR", fonksiyon: ()=> openNewTab(context , spor()), icon: Icons.sports_kabaddi, iconSize: 100, width: 190, height: 190),
 
                   SizedBox(width: 10,)
                 ],
@@ -81,11 +89,11 @@ class _MyHomePageState extends State<MyHomePage> {
 
                   SizedBox(width: 10,),
 
-                  butonOlustur(text: "KÜLTÜR & SANAT", fonksiyon: () => openNewTab(context, saglik()) , icon: Icons.travel_explore, iconSize: 50, width: 190, height: 190.0),
+                  butonOlustur(text: "ELAZIĞ'I TANIYALIM", fonksiyon: () => openNewTab(context, elazigiTaniyalim()) , icon: Icons.travel_explore, iconSize: 50, width: 190, height: 190.0),
 
                   SizedBox(width: 10,),
 
-                  butonOlustur(text: "HABERLER", fonksiyon: ()=> openNewTab(context, saglik()), icon: Icons.newspaper, iconSize: 50, width: 130, height: 190),
+                  butonOlustur(text: "HABERLER", fonksiyon: ()=> openNewTab(context, haber()), icon: Icons.newspaper, iconSize: 50, width: 130, height: 190),
 
                   SizedBox(width: 10,),
 
@@ -100,11 +108,12 @@ class _MyHomePageState extends State<MyHomePage> {
 
                   SizedBox(width: 10,),
 
-                  butonOlustur(text: "USTA ÇAĞIR", fonksiyon: ()=> openNewTab(context, saglik()), icon: Icons.handyman_outlined, iconSize: 95, width: 190, height: 190),
+                  butonOlustur(text: "USTA ÇAĞIR", fonksiyon: ()=> openNewTab(context, usta()), icon: Icons.handyman_outlined, iconSize: 95, width: 190, height: 190),
 
                   SizedBox(width: 10,),
 
-                  butonOlustur(text: "ULAŞIM", fonksiyon:()=> openNewTab(context, saglik()) , icon: Icons.directions_transit_filled_outlined, iconSize: 100, width: 190, height: 190)
+                  butonOlustur(text: "ULAŞIM", fonksiyon:()=> openNewTab(context, ulasim()  ) , icon: Icons.directions_transit_filled_outlined, iconSize: 100, width: 190, height: 190),
+                  SizedBox(width: 10,)
                 ],
               ),
               SizedBox(height: 10,),
@@ -116,11 +125,11 @@ class _MyHomePageState extends State<MyHomePage> {
 
                   SizedBox(width: 10,),
 
-                  butonOlustur(text:"Konaklama" , fonksiyon: ()=> openNewTab(context , saglik()), icon: Icons.hotel, iconSize: 50, width: 130, height: 190),
+                  butonOlustur(text:"Konaklama" , fonksiyon: ()=> openNewTab(context , konaklama()), icon: Icons.hotel, iconSize: 50, width: 130, height: 190),
 
                   SizedBox(width: 10,),
 
-                  butonOlustur(text: "KİŞİSEL BAKIM", fonksiyon: ()=> openNewTab(context , saglik()), icon: Icons.spa_outlined, iconSize: 50, width: 130, height: 190),
+                  butonOlustur(text: "KİŞİSEL BAKIM", fonksiyon: ()=> openNewTab(context , bakim()), icon: Icons.spa_outlined, iconSize: 50, width: 130, height: 190),
 
                   SizedBox(width: 10,)
                 ],
@@ -134,8 +143,8 @@ class _MyHomePageState extends State<MyHomePage> {
 
                   SizedBox(width: 10,),
 
-                  butonOlustur(text: "DUYURULAR", fonksiyon: ()=> openNewTab(context , saglik()), icon: Icons.campaign_outlined, iconSize: 100, width: 190, height: 190)
-
+                  butonOlustur(text: "DUYURULAR", fonksiyon: ()=> openNewTab(context , saglik()), icon: Icons.campaign_outlined, iconSize: 100, width: 190, height: 190),
+                  SizedBox(width: 10,)
                 ],
               ),
               SizedBox(height: 10,),
@@ -143,7 +152,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 children: [
                   SizedBox(width: 10,),
 
-                  butonOlustur(text: "CEPTE FIRAT", fonksiyon: ()=> openNewTab(context , saglik()), icon: Icons.school_outlined, iconSize: 100, width: 190, height: 190),
+                  butonOlustur(text: "CEPTE FIRAT", fonksiyon: ()=> openNewTab(context , cepteFirat()), icon: Icons.school_outlined, iconSize: 100, width: 190, height: 190),
 
                   SizedBox(width: 10,),
 
@@ -163,8 +172,20 @@ class _MyHomePageState extends State<MyHomePage> {
                   butonOlustur(text: "ARAÇ KİRALA", fonksiyon: ()=> openNewTab(context , saglik()), icon: Icons.car_rental_outlined, iconSize: 50, width: 130, height: 190),
                   SizedBox(width: 10,)
                 ],
-              )
-              ,SizedBox(height: 10,)
+              ),
+              SizedBox(height: 10,),
+              Row(
+                children: [
+                  SizedBox(width: 10,),
+                  butonOlustur(text: "ÇİÇEKÇİ", fonksiyon: ()=>openNewTab(context , saglik()), icon: Icons.local_florist_outlined, iconSize: 50, width: 130, height: 190),
+                  SizedBox(width: 10,),
+                  butonOlustur(text: "EV DEKORASYON", fonksiyon: ()=>openNewTab(context, saglik()), icon: Icons.chair_outlined, iconSize: 50, width: 130, height: 190),
+                  SizedBox(width: 10,),
+                  butonOlustur(text: "EĞLENCE", fonksiyon: ()=>openNewTab(context , spor()), icon: Icons.sports_esports_outlined, iconSize: 50, width: 130, height: 190),
+                  SizedBox(width: 10,),
+                ],
+              ),
+              SizedBox(height: 10,)
             ]
         )
     );
@@ -185,7 +206,7 @@ class _MyHomePageState extends State<MyHomePage> {
           onPressed: fonksiyon,
           child: Column(
             children: [
-              Icon(icon, size: iconSize.toDouble(),),
+              Icon(icon, size: iconSize.toDouble(), color: Colors.white,),
               Text(text)
             ],
           ),

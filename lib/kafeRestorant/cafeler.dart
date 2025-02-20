@@ -5,7 +5,7 @@ import 'otuzuncuYilCafe.dart';
 
 class cafeler extends StatelessWidget {
   Widget build(BuildContext context) {
-    void cafe1 (context,Widget sayfa)
+    void navigator (context,Widget sayfa)
     {
       Navigator.push(context, MaterialPageRoute(builder: (context) => sayfa));
     }
@@ -14,11 +14,11 @@ class cafeler extends StatelessWidget {
         body: ListView(
           children: [
             SizedBox(height: 10,),
-            butonOlustur(text: "Asbirin Cafe", fonksiyon:() => cafe1(context, asbirinCafe()) , width: 700, height: 50),
+            butonOlustur(text: "Asbirin Cafe", fonksiyon:() => navigator(context, asbirinCafe()) , width: 700, height: 50),
             SizedBox(height: 10,),
-            butonOlustur(text: "Teknokent Cafe", fonksiyon:() => cafe1(context, teknokentCafe()) , width: 700, height: 50),
+            butonOlustur(text: "Teknokent Cafe", fonksiyon:() => navigator(context, teknokentCafe()) , width: 700, height: 50),
             SizedBox(height: 10,),
-            butonOlustur(text: "30. Yıl Cafe", fonksiyon:() => cafe1(context, otuzuncuYilCafe()) , width: 700, height: 50),
+            butonOlustur(text: "30. Yıl Cafe", fonksiyon:() => navigator(context, otuzuncuYilCafe()) , width: 700, height: 50),
             SizedBox(height: 10,)
           ],
         )
