@@ -1,0 +1,43 @@
+import 'package:elazigcepte/otoServis/otoBakim/autoKingOB.dart';
+import 'package:flutter/material.dart';
+
+class otoBakim extends StatelessWidget {
+  Widget build(BuildContext context) {
+    void navigator (context,Widget sayfa)
+    {
+      Navigator.push(context, MaterialPageRoute(builder: (context) => sayfa));
+    }
+    return Scaffold(
+        appBar: AppBar(title: Text("OTO BAKIM VE ONARIM SERVİSİ", style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),),
+        body: ListView(
+          children: [
+            SizedBox(height: 10,),
+            butonOlustur(text: "Auto King - Elazığ Otomotiv Yetkili Servis", fonksiyon:() => navigator(context, autoKingOB()) , width: 700, height: 50),
+            SizedBox(height: 10,),
+            butonOlustur(text: "Koçtürk Otomotiv", fonksiyon:() => navigator(context, autoKingOB()) , width: 700, height: 50),
+            SizedBox(height: 10,),
+            butonOlustur(text: "FİAT PARK oto bakım ve onarım servisi", fonksiyon:() => navigator(context, autoKingOB()) , width: 700, height: 50),
+            SizedBox(height: 10,),
+          ],
+        )
+    );
+  }
+  Flexible butonOlustur({required String text, required VoidCallback fonksiyon , required width , required height}){
+    int buttonColor= 0xFF800020;
+    int textColor= (0xFFFFFFFF) ;
+    return Flexible(
+        child: ElevatedButton(
+          onPressed: fonksiyon,
+          child: Center(
+              child:Text(text)
+          ),
+          style: ElevatedButton.styleFrom(
+              shape: RoundedRectangleBorder(),
+              minimumSize: Size(width.toDouble(), height.toDouble()),
+              backgroundColor: Color(buttonColor),
+              foregroundColor: Color(textColor)
+          ),
+        )
+    );
+  }
+}

@@ -1,8 +1,10 @@
 import 'package:elazigcepte/cepteFirat/cepteFirat.dart';
+import 'package:elazigcepte/egitim/egitim.dart';
 import 'package:elazigcepte/elazigiTaniyalim/elazigiTaniyalim.dart';
 import 'package:elazigcepte/haber/haber.dart';
 import 'package:elazigcepte/kisiselBakim/bakim.dart';
 import 'package:elazigcepte/konaklama/konaklama.dart';
+import 'package:elazigcepte/otoServis/otoServis.dart';
 import 'package:elazigcepte/saglik/saglik.dart';
 import "package:elazigcepte/kafeRestorant/cafeler.dart";
 import 'package:elazigcepte/spor/spor.dart';
@@ -43,7 +45,7 @@ class _MyHomePageState extends State<MyHomePage> {
           backgroundColor: Color(buttonColor),
           title:
           Text(
-            "Elazığ Cepte",
+            "ELAZIĞ CEPTE",
             style:  TextStyle(
                 fontSize: 30,
                 color: Colors.white
@@ -156,7 +158,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
                   SizedBox(width: 10,),
 
-                  butonOlustur(text: "EĞİTİM", fonksiyon: ()=> openNewTab(context , saglik()), icon: Icons.book_outlined, iconSize: 100, width: 190, height: 190),
+                  butonOlustur(text: "EĞİTİM", fonksiyon: ()=> openNewTab(context , egitim()), icon: Icons.book_outlined, iconSize: 100, width: 190, height: 190),
 
                   SizedBox(width: 10,)
                 ],
@@ -165,7 +167,7 @@ class _MyHomePageState extends State<MyHomePage> {
               Row(
                 children: [
                 SizedBox(width: 10,),
-                butonOlustur(text: "OTO SERVİS", fonksiyon: ()=> openNewTab(context , saglik()), icon: Icons.car_repair, iconSize: 50, width: 130, height: 190),
+                butonOlustur(text: "ARACA DAİR HER ŞEY", fonksiyon: ()=> openNewTab(context , otoServis()), icon: Icons.car_repair, iconSize: 50, width: 130, height: 190),
                 SizedBox(width: 10,),
                 butonOlustur(text: "AKARYAKIT", fonksiyon: ()=> openNewTab(context , saglik()), icon: Icons.local_gas_station_outlined, iconSize: 50, width: 130, height: 190),
                   SizedBox(width: 10,),
