@@ -1,9 +1,12 @@
 import 'package:elazigcepte/cepteFirat/cepteFirat.dart';
+import 'package:elazigcepte/cicekci/cicekci.dart';
 import 'package:elazigcepte/egitim/egitim.dart';
 import 'package:elazigcepte/elazigiTaniyalim/elazigiTaniyalim.dart';
+import 'package:elazigcepte/evDekorasyon/evDekorasyon.dart';
 import 'package:elazigcepte/haber/haber.dart';
 import 'package:elazigcepte/kisiselBakim/bakim.dart';
 import 'package:elazigcepte/konaklama/konaklama.dart';
+import 'package:elazigcepte/misas/misas.dart';
 import 'package:elazigcepte/otoServis/otoServis.dart';
 import 'package:elazigcepte/saglik/saglik.dart';
 import "package:elazigcepte/kafeRestorant/cafeler.dart";
@@ -123,7 +126,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 children: [
                   SizedBox(width: 10,),
 
-                  butonOlustur(text: "KAMPANYA", fonksiyon: ()=> openNewTab(context, saglik()), icon: Icons.sell_outlined, iconSize: 50, width: 130, height: 190),
+                  butonOlustur(text: "GİYİM", fonksiyon: ()=> openNewTab(context, saglik()), icon: Icons.sell_outlined, iconSize: 50, width: 130, height: 190),
 
                   SizedBox(width: 10,),
 
@@ -169,21 +172,21 @@ class _MyHomePageState extends State<MyHomePage> {
                 SizedBox(width: 10,),
                 butonOlustur(text: "ARACA DAİR HER ŞEY", fonksiyon: ()=> openNewTab(context , otoServis()), icon: Icons.car_repair, iconSize: 50, width: 130, height: 190),
                 SizedBox(width: 10,),
-                butonOlustur(text: "AKARYAKIT", fonksiyon: ()=> openNewTab(context , saglik()), icon: Icons.local_gas_station_outlined, iconSize: 50, width: 130, height: 190),
-                  SizedBox(width: 10,),
                   butonOlustur(text: "ARAÇ KİRALA", fonksiyon: ()=> openNewTab(context , saglik()), icon: Icons.car_rental_outlined, iconSize: 50, width: 130, height: 190),
-                  SizedBox(width: 10,)
+                  SizedBox(width: 10,),
+                  butonOlustur(text: "EĞLENCE", fonksiyon: ()=>openNewTab(context , spor()), icon: Icons.sports_esports_outlined, iconSize: 50, width: 130, height: 190),
+                  SizedBox(width: 10,),
                 ],
               ),
               SizedBox(height: 10,),
               Row(
                 children: [
                   SizedBox(width: 10,),
-                  butonOlustur(text: "ÇİÇEKÇİ", fonksiyon: ()=>openNewTab(context , saglik()), icon: Icons.local_florist_outlined, iconSize: 50, width: 130, height: 190),
+                  butonOlustur(text: "ÇİÇEKÇİ", fonksiyon: ()=>openNewTab(context , cicekci()), icon: Icons.local_florist_outlined, iconSize: 50, width: 130, height: 190),
                   SizedBox(width: 10,),
-                  butonOlustur(text: "EV DEKORASYON", fonksiyon: ()=>openNewTab(context, saglik()), icon: Icons.chair_outlined, iconSize: 50, width: 130, height: 190),
+                  butonOlustur(text: "EV DEKORASYON", fonksiyon: ()=>openNewTab(context, evDekorasyon()), icon: Icons.chair_outlined, iconSize: 50, width: 130, height: 190),
                   SizedBox(width: 10,),
-                  butonOlustur(text: "EĞLENCE", fonksiyon: ()=>openNewTab(context , spor()), icon: Icons.sports_esports_outlined, iconSize: 50, width: 130, height: 190),
+                  butonOlustur(text: "MİSAŞ", fonksiyon: ()=>openNewTab(context , misas()), icon: Icons.sports_esports_outlined, iconSize: 50, width: 130, height: 190),
                   SizedBox(width: 10,),
                 ],
               ),

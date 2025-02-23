@@ -1,6 +1,14 @@
+import 'package:elazigcepte/otoServis/ekspertiz/ekspertiz.dart';
 import 'package:elazigcepte/otoServis/galeri/galeri.dart';
+import 'package:elazigcepte/otoServis/kaporta/kaporta.dart';
+import 'package:elazigcepte/otoServis/lastikci/lastikci.dart';
 import 'package:elazigcepte/otoServis/otoBakim/otoBakim.dart';
+import 'package:elazigcepte/otoServis/otoDoseme/otoDoseme.dart';
+import 'package:elazigcepte/otoServis/otoElektrik/otoElektrik.dart';
+import 'package:elazigcepte/otoServis/otoKurtarma/otoKurtarma.dart';
+import 'package:elazigcepte/otoServis/otoYikama/otoYikama.dart';
 import 'package:elazigcepte/otoServis/sigorta/sigorta.dart';
+import 'package:elazigcepte/otoServis/yedekParca/yedekParcaci.dart';
 import 'package:flutter/material.dart';
 
 class otoServis extends StatelessWidget {
@@ -20,21 +28,21 @@ class otoServis extends StatelessWidget {
             SizedBox(height: 10,),
             butonOlustur(text: "OTO BAKIM VE ONARIM SERVİSİ", fonksiyon:() => navigator(context, otoBakim()) , width: 700, height: 50),
             SizedBox(height: 10,),
-            butonOlustur(text: "OTO KURTARMA & ÇEKİCİ", fonksiyon:() => navigator(context, galeri()) , width: 700, height: 50),
+            butonOlustur(text: "OTO KURTARMA & ÇEKİCİ", fonksiyon:() => navigator(context, otoCekici()) , width: 700, height: 50),
             SizedBox(height: 10,),
-            butonOlustur(text: "OTO YIKAMA", fonksiyon:() => navigator(context, galeri()) , width: 700, height: 50),
+            butonOlustur(text: "OTO YIKAMA", fonksiyon:() => navigator(context, otoYikama()) , width: 700, height: 50),
             SizedBox(height: 10,),
-            butonOlustur(text: "OTO ELEKTRİK", fonksiyon:() => navigator(context, galeri()) , width: 700, height: 50),
+            butonOlustur(text: "OTO ELEKTRİK", fonksiyon:() => navigator(context, otoElektrik()) , width: 700, height: 50),
             SizedBox(height: 10,),
-            butonOlustur(text: "KAPORTA BOYA", fonksiyon:() => navigator(context, galeri()) , width: 700, height: 50),
+            butonOlustur(text: "KAPORTA BOYA", fonksiyon:() => navigator(context, kaporta()) , width: 700, height: 50),
             SizedBox(height: 10,),
-            butonOlustur(text: "LASTİK", fonksiyon:() => navigator(context, galeri()) , width: 700, height: 50),
+            butonOlustur(text: "LASTİK", fonksiyon:() => navigator(context, lastikci()) , width: 700, height: 50),
             SizedBox(height: 10,),
-            butonOlustur(text: "EKSPERTİZ", fonksiyon:() => navigator(context, galeri()) , width: 700, height: 50),
+            butonOlustur(text: "EKSPERTİZ", fonksiyon:() => navigator(context, ekspertiz()) , width: 700, height: 50),
             SizedBox(height: 10,),
-            butonOlustur(text: "YEDEK PARÇA", fonksiyon:() => navigator(context, galeri()) , width: 700, height: 50),
+            butonOlustur(text: "YEDEK PARÇA", fonksiyon:() => navigator(context, yedekParcaci()) , width: 700, height: 50),
             SizedBox(height: 10,),
-            butonOlustur(text: "DÖŞEME AKSESUAR", fonksiyon:() => navigator(context, galeri()) , width: 700, height: 50),
+            butonOlustur(text: "DÖŞEME AKSESUAR", fonksiyon:() => navigator(context, otoDoseme()) , width: 700, height: 50),
             SizedBox(height: 10,),
           ],
         )
