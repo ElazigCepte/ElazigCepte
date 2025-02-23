@@ -11,13 +11,13 @@ class cicekci extends StatelessWidget {
         appBar: AppBar(title: Text("ÇİÇEKÇİ", style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),),
         body: ListView(
           children: [
-              SizedBox(width: 10,),
-              butonOlustur(text: "ÇİÇEKÇİ MEHMET", fonksiyon: ()=> navigator(context, cicekciMehmet()), width: 70, height: 150),
-              SizedBox(width: 10,),
-              butonOlustur(text: "Açelya Çiçekçilik", fonksiyon:() => navigator(context, cicekciMehmet()) , width: 70, height: 150),
-              SizedBox(width: 10,),
-            butonOlustur(text: "DAĞ FLOWERS ÇİÇEKCİLİK", fonksiyon:() => navigator(context, cicekciMehmet()) , width: 70, height: 150),
-            SizedBox(width: 10,)
+              SizedBox(height: 10,),
+              butonOlustur(text: "ÇİÇEKÇİ MEHMET", fonksiyon: ()=> navigator(context, cicekciMehmet()), width: 700, height: 50),
+              SizedBox(height: 10,),
+              butonOlustur(text: "Açelya Çiçekçilik", fonksiyon:() => navigator(context, cicekciMehmet()) , width: 700, height: 50),
+              SizedBox(height: 10,),
+            butonOlustur(text: "DAĞ FLOWERS ÇİÇEKCİLİK", fonksiyon:() => navigator(context, cicekciMehmet()) , width: 700, height: 50),
+            SizedBox(height: 10,)
           ],
         )
     );

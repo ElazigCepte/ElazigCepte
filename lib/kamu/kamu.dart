@@ -1,22 +1,23 @@
-import 'package:elazigcepte/evDekorasyon/cicekED.dart';
 import 'package:flutter/material.dart';
-
-class evDekorasyon extends StatelessWidget {
+import 'elazigBelediyesi.dart';
+import 'elazigValiligi.dart';
+import 'elazigDsi.dart';
+class kamu extends StatelessWidget {
   Widget build(BuildContext context) {
     void navigator (context,Widget sayfa)
     {
       Navigator.push(context, MaterialPageRoute(builder: (context) => sayfa));
     }
     return Scaffold(
-        appBar: AppBar(title: Text("EV DEKORASYON", style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),),
+        appBar: AppBar(title: Text("  KAMU  ", style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),),
         body: ListView(
           children: [
             SizedBox(height: 10,),
-            butonOlustur(text: "Çiçekler Yapı Dekorasyon", fonksiyon: ()=> navigator(context, cicekED()), width: 700, height: 50),
+            butonOlustur(text: "ELAZIĞ BELEDİYESİ", fonksiyon:() => navigator(context, elazigBelediyesi()) , width: 700, height: 50),
             SizedBox(height: 10,),
-            butonOlustur(text: "Hayal Penceresi Ev Dekorasyon", fonksiyon:() => navigator(context, cicekED()) , width: 700, height: 50),
+            butonOlustur(text: "ELAZIĞ VALİLİĞİ", fonksiyon:() => navigator(context, elazigValiligi()) , width: 700, height: 50),
             SizedBox(height: 10,),
-            butonOlustur(text: "TREND YAPI DEKORASYON DUVAR KAĞITLARI", fonksiyon:() => navigator(context, cicekED()) , width: 700, height: 50),
+            butonOlustur(text: "ELAZIĞ DSİ", fonksiyon:() => navigator(context, elazigDsi()) , width: 700, height: 50),
             SizedBox(height: 10,)
           ],
         )

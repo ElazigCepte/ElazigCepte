@@ -1,9 +1,12 @@
+import 'package:elazigcepte/aracKiralama/aracKiralama.dart';
 import 'package:elazigcepte/cepteFirat/cepteFirat.dart';
 import 'package:elazigcepte/cicekci/cicekci.dart';
 import 'package:elazigcepte/egitim/egitim.dart';
+import 'package:elazigcepte/eglence/eglence.dart';
 import 'package:elazigcepte/elazigiTaniyalim/elazigiTaniyalim.dart';
 import 'package:elazigcepte/evDekorasyon/evDekorasyon.dart';
 import 'package:elazigcepte/haber/haber.dart';
+import 'package:elazigcepte/kamu/kamu.dart';
 import 'package:elazigcepte/kisiselBakim/bakim.dart';
 import 'package:elazigcepte/konaklama/konaklama.dart';
 import 'package:elazigcepte/misas/misas.dart';
@@ -79,7 +82,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
                   SizedBox(width: 10,),
 
-                  butonOlustur(text: "KAMU  ", fonksiyon: () => openNewTab(context , saglik()), icon: Icons.account_balance_outlined, iconSize: 100, width: 190, height: 190),
+                  butonOlustur(text: "KAMU  ", fonksiyon: () => openNewTab(context , kamu()), icon: Icons.account_balance_outlined, iconSize: 100, width: 190, height: 190),
 
                   SizedBox(width: 10,),
 
@@ -172,9 +175,9 @@ class _MyHomePageState extends State<MyHomePage> {
                 SizedBox(width: 10,),
                 butonOlustur(text: "ARACA DAİR HER ŞEY", fonksiyon: ()=> openNewTab(context , otoServis()), icon: Icons.car_repair, iconSize: 50, width: 130, height: 190),
                 SizedBox(width: 10,),
-                  butonOlustur(text: "ARAÇ KİRALA", fonksiyon: ()=> openNewTab(context , saglik()), icon: Icons.car_rental_outlined, iconSize: 50, width: 130, height: 190),
+                  butonOlustur(text: "ARAÇ KİRALA", fonksiyon: ()=> openNewTab(context , aracKiralama()), icon: Icons.car_rental_outlined, iconSize: 50, width: 130, height: 190),
                   SizedBox(width: 10,),
-                  butonOlustur(text: "EĞLENCE", fonksiyon: ()=>openNewTab(context , spor()), icon: Icons.sports_esports_outlined, iconSize: 50, width: 130, height: 190),
+                  butonOlustur(text: "EĞLENCE", fonksiyon: ()=>openNewTab(context , eglence()), icon: Icons.sports_esports_outlined, iconSize: 50, width: 130, height: 190),
                   SizedBox(width: 10,),
                 ],
               ),
